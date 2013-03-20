@@ -1,0 +1,13 @@
+h2 Document
+
+p = @document.name
+
+p = @document.attachment
+
+- if @document.attachment.image?
+	= image_tag @document.attachment.url
+- else
+	= link_to 'Download file', @document.attachment.url
+
+
+p = link_to 'Back to index', root_path

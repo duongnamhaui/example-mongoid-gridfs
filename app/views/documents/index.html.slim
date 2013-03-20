@@ -1,0 +1,12 @@
+h2 Documents
+
+ul
+	- @documents.each do |document|
+		li
+			- if document.attachment.image?
+				= image_tag document.attachment.url(:thumb)
+			- else
+				=link_to "[#{document.attachment.file.content_type}]", document.attachment.url
+			| #{document.name} <a href="#{document_path(document)}">Edit</a>
+
+= link_to 'New Document', new_document_path
