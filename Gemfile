@@ -41,6 +41,8 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
-gem 'better_errors'
-gem 'binding_of_caller'
+group :development do
+	gem 'debugger'
+	gem 'better_errors'
+	gem 'binding_of_caller'
+end
