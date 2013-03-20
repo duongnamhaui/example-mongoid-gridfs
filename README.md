@@ -1,7 +1,11 @@
-Very basic example of using MongoDB GridFS as a file store
-----------------------------------------------------------
+Very basic example of using MongoDB GridFS as a file store in Rails
+-------------------------------------------------------------------
 
 This example uses `mongoid` and `carrierwave`.
+
+**Installation and running**
+
+    bundle && rails s
 
 TODO:
 
