@@ -9,6 +9,6 @@ This example uses `mongoid` and `carrierwave`.
 
 TODO:
 
-At some file size (50mb+) the app is able to store files but not retrive them due to the following:
+At some file size (around 50mb) the app is able to store files but not retrieve them due to the following:
 
     assertion 10128 too much data for sort() with no index.  add an index or specify a smaller limit
